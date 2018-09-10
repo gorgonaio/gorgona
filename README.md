@@ -1,6 +1,6 @@
 # Gorgona.io smart contract
 
-[Gorgona io](https://www.google.com)
+[Gorgona io](https://gorgona.io)
 
 
 ### Check contract working
