@@ -1,4 +1,4 @@
-# Contract.io smart contract
+# Gorgona.io smart contract
 
 [Gorgona io](https://www.google.com)
 
