@@ -59,7 +59,16 @@ Warning! This test took a lot of time!
 
 `$ truffle test test/gorgona-loadtest.io`
 
-For successful test you must see something like this:
+
+If everything was great you will see smth like this:
+```Compiling ./contracts/Gorgona.sol...
 
 
+  Contract: Gorgona
+    ✓ Loadtesting: Create a many investors (6476ms)
+    ✓ Loadtesting: Check payout for a large number of investors (29773ms)
 
+
+  2 passing (36s)
+
+```
