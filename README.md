@@ -26,25 +26,29 @@ First of all, to ensure that everything works properly you should run tests.
 If everything was great you will see smth like this:
 ```
 Compiling ./contracts/Gorgona.sol...
+Compiling ./contracts/Theft.sol...
+
 
   Contract: Gorgona
-    ✓ has an owner
-    ✓ Contract can accepts funds (188ms)
-    ✓ Reinvest is considered correctly (113ms)
-    ✓ Owner fee (238ms)
-    ✓ Payments: there should be no payments immediately after the investment (48ms)
-    ✓ Referrer commission works properly (554ms)
-    ✓ Referrer: incorrectly specified referrer has no effect (346ms)
-    ✓ Referrer: cashback works properly (527ms)
+    ✓ Has an owner
+    ✓ Contract can accept incoming transactions (231ms)
+    ✓ Reinvest is correct (157ms)
+    ✓ Owner receives correct fee (270ms)
+    ✓ Referrer commission works properly (598ms)
+    ✓ Referrer: incorrectly specified referrer has no effect (425ms)
+    ✓ Referrer: cash-back works properly (772ms)
     ✓ Check minimum invest
-    ✓ Check working admin function to change min payout interval (203ms)
-    ✓ Payouts: check function getInvestorUnPaidAmount (102ms)
-    ✓ Payouts: check function payoutSelf (526ms)
-    ✓ Check getDepositAmount & getInvestorCount functions (106ms)
-    ✓ Payout: checks payouts work properly (760ms)
+    ✓ Payout: check function getInvestorDividendsAmount (100ms)
+    ✓ Payout: check function self payout (537ms)
+    ✓ Check getDepositAmount & getInvestorCount functions (108ms)
+    ✓ Payout: check payouts work properly (735ms)
+    ✓ Check ownershipTransfer (290ms)
+    ✓ Check revert on another contract (291ms)
+    ✓ Check KOtH: GorgonaKiller (452ms)
+    ✓ Check rounds (455ms)
 
 
-  14 passing (5s)
+  16 passing (7s)
 ```
 
 To ensure that smart-contact can be used by tones of investors,
@@ -61,14 +65,15 @@ Warning! This test took a lot of time!
 
 
 If everything was great you will see smth like this:
-```Compiling ./contracts/Gorgona.sol...
+```
+Compiling ./contracts/Gorgona.sol...
 
 
   Contract: Gorgona
-    ✓ Loadtesting: Create a many investors (6476ms)
-    ✓ Loadtesting: Check payout for a large number of investors (29773ms)
+    ✓ Loadtesting: Create a many investors (700ms)
+    ✓ Loadtesting: Check payout for a large number of investors (2716ms)
+    ✓ Loadtesting: Check next round on a lot investors (851ms)
 
 
-  2 passing (36s)
-
+  3 passing (4s)
 ```
