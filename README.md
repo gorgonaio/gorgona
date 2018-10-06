@@ -21,7 +21,7 @@ $ npm install
 
 First of all, to ensure that everything works properly you should run tests.
 
-`$ truffle test test/gorgona.io`
+`$ truffle test test/gorgona.js`
 
 If everything was great you will see smth like this:
 ```
@@ -61,7 +61,7 @@ Before testing you should start ganache-cli with key `-a 500`  (investors count)
 
 Warning! This test took a lot of time!
 
-`$ truffle test test/gorgona-loadtest.io`
+`$ truffle test test/gorgona-loadtest.js`
 
 
 If everything was great you will see smth like this:
